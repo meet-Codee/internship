@@ -92,14 +92,14 @@
         <a href="#">View project</a>
 
         <article class="project-card" data-category="web">
-            <img src="project2.jpg" alt="Project 2">
+            <img src="weather" alt="Project 2">
             <h3>Project 2</h3>
             <p>Description of project 2</p>
         </article>
         <a href="#">View project</a>
 
         <article class="project-card" data-category="web">
-            <img src="project3.jpg" alt="Project 3">
+            <img src="weather" alt="Project 3">
             <h3>Project 3</h3>
             <p>Description of project 3</p>
         </article>
@@ -193,6 +193,43 @@
         <a href="" target="_blank">LinkedIn</a>
       </nav>
     </footer>
-    <script src="script.js"></script>
+    <script>
+     //let ramaiah = document.querySelector(".skill-section");
+let ruas = document.createElement("div");
+ruas.className="project-card";
+ruas.innerHTML=`
+<img src="weather" alt="NO CAPTION">
+<div class="project-card">
+    <h3>New Project</h3>
+    <p>This is created using javascript</p>
+</div>
+`;
+/*let addproject=document.querySelector(".project-grid
+addproject.appendChild(ruas);
+document.querySelectorAll(".project-grid");
+
+let carddelete=document.querySelector(".project-card1")
+carsdelete.remove();
+console.log(ramaiah.textContent);
+        console.log(ramaiah.innerHTML);
+        console.log(ramaiah.id);
+        console.log(ramaiah.className);
+
+        ramaiah.textContent = "Javascript DOM";
+        ramaiah.innerHTML = "Title with <span>HTML</span>";
+        ramaiah.style.color = "blue";
+        ramaiah.style.fontSize = "2rem";
+        ramaiah.setAttribute('id','myskills')
+        console.log(ramaiah.id);*/
+        console.log("javascript");
+        let formbtn=document.querySelector(".btn")
+        formbtn.addEventListener("click",event=>{
+            event.preventDefault();//prevent default browser behavior
+            event.stopPropagation();//stop event bubbling up
+            console.log("button clicked");
+       
+       let 
+        })
+    </script>
 </body>
 </html>

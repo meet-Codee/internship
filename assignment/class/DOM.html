@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            color: green;
+        }
+        .hidden{
+            display: none;
+        }
+        .dark{
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .new{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Javascript DOM</h1>
+
+<script>
+    let ruas=document.querySelector("h1")
+//Add a class
+ruas.classList.add("active")
+console.log(ruas.className);
+//remove a class
+ruas.classList.remove("active")
+console.log(ruas.className);
+//toggle a class    
+ruas.classList.toggle("dark")
+console.log(ruas.className);
+//replace a class
+ruas.classList.replace("heading", "anotherheading")
+console.log(ruas.className);
+
+</script> 
+</body>
+</html>
